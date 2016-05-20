@@ -1,0 +1,39 @@
+
+html, body {
+	height: 100%;
+}
+
+a, button {
+	outline: 0 !important;
+}
+
+.no-padding {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.img-responsive {
+	width: 100%;
+}
+
+.img-height-responsive{
+	width: auto;
+	height: 100%;
+}
+
+.contenido-entoria-logo,
+.contenido-info-entoria {
+	position: absolute;
+}
+
+.contenido-entoria-logo
+.container-logo-entoria {
+	background-color: rgba(255, 255, 255, 0.65);
+	padding: 25px 20px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.contenido-info-entoria {
+	background-color: rgba(58, 151, 87, 0.65);
+}
