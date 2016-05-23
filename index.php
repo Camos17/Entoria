@@ -6,7 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>Entoria</title>
-		
+
+		<link rel="icon" type="image/png" href="img/favicon_entoria.png">	
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/ionicons.min.css">
@@ -50,7 +51,7 @@
 			
 				<div class="contenido-entoria-logo col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
 					<div class="col-xs-12 container-logo-entoria">
-						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">	
+						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">	
 							<img class="img-responsive" src="img/logo_entoria.svg" alt=""..>
 						</div>
 					</div>
@@ -58,7 +59,7 @@
 
 				<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 contenido-info-entoria">
 					<div class="col-xs-12 img-proximamente">
-						<div class="col-xs-12 col-xs-10 col-xs-offset-1 ">	
+						<div class="col-xs-12 col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">	
 							<img class="img-responsive" src="img/proximamente.svg" alt="...">
 						</div>
 					</div>
