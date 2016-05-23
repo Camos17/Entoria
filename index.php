@@ -104,16 +104,16 @@
 
 			</div>
 		<!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		  <a class="left carousel-control hidden-xs hidden-sm" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="va icon ion-ios-arrow-back" aria-hidden="true"></span>
 		    <span class="sr-only">Previous</span>
 		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		  <a class="right carousel-control hidden-xs hidden-sm" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="va icon ion-ios-arrow-forward" aria-hidden="true"></span>
 		    <span class="sr-only">Next</span>
 		  </a>	
 		</div>
-		
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 

@@ -21,6 +21,14 @@ a, button {
 	height: 100%;
 }
 
+.va{
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);  
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
 .entoria-wrapper,
 .corousel-entoria {
 	height: 100%;
@@ -41,6 +49,11 @@ a, button {
 .carousel-control.right,
 .carousel-control.left {
 	background-image: none;
+}
+
+.carousel-control.right span,
+.carousel-control.left span {
+	font-size: 3rem;
 }
 
 .entoria-wrapper
