@@ -38,6 +38,11 @@ a, button {
 	width: auto;
 }
 
+.carousel-control.right,
+.carousel-control.left {
+	background-image: none;
+}
+
 .entoria-wrapper
 .fondo-entoria-mobile {
 	height: 100%;	
