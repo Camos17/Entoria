@@ -21,8 +21,35 @@ a, button {
 	height: 100%;
 }
 
-.contenido-entoria-logo,
-.contenido-info-entoria {
+.entoria-wrapper,
+.corousel-entoria {
+	height: 100%;
+}
+
+.corousel-entoria {
+	position: fixed;
+}
+
+.carousel-inner,
+.carousel-inner
+.item
+.img-carousel {
+	height: 100%;
+	width: auto;
+}
+
+.entoria-wrapper
+.fondo-entoria-mobile {
+	height: 100%;	
+	background: url('../img/04.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: fixed;
+}
+
+.contenido-entoria {
 	position: absolute;
 }
 
@@ -34,6 +61,68 @@ a, button {
 	margin-bottom: 15px;
 }
 
-.contenido-info-entoria {
+.contenido-info-entoria
+.img-proximamente,
+.contenido-info-entoria
+.info-entoria {
 	background-color: rgba(58, 151, 87, 0.65);
+}
+
+.contenido-info-entoria
+.info-entoria {
+	margin-bottom: 25px;
+}
+
+.contenido-info-entoria
+.img-proximamente {
+	padding-top: 30px;
+	padding-bottom: 45px;
+}
+
+.contenido-info-entoria
+.info-entoria
+.info-contacto2 {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.contenido-info-entoria
+.info-entoria p {
+	color: #FFF;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(204, 204, 204, 0.45);
+}
+
+.contenido-info-entoria
+.info-entoria p a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #FFF;
+}
+
+.contenido-info-entoria
+.info-entoria p i {
+	font-size: 2.2rem;
+}
+
+.contenido-entoria hr {
+	border-top: 1px solid #FFF;
+}
+
+
+@media screen and (min-width: 768px) {
+	
+	.contenido-info-entoria
+	.info-entoria
+	.info-contacto2 {
+		padding-top: 0px;
+		padding-bottom: 20px;
+	}
+
+	.contenido-info-entoria
+	.info-entoria
+	.info-contacto	{
+		border-right: 1px solid #FFF;
+	}
+
 }
