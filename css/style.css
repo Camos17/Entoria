@@ -97,6 +97,7 @@ a, button {
 	color: #FFF;
 	font-size: 4rem;
 	text-align: center;
+	letter-spacing: 1.5px;
 }
 
 .contenido-info-entoria h3 {
@@ -104,7 +105,8 @@ a, button {
 	color: #FFF;
 	text-align: center;
 	margin-top: 0px;
-	font-size: 2rem;
+	font-size: 1.9rem;
+	letter-spacing: 1.5px;
 }
 
 
@@ -149,11 +151,11 @@ a, button {
 	border-top: 1px solid #FFF;
 }
 
-.idiomas {
+.btn-idiomas {
 	background-color: rgba(255, 255, 255, 0.75);
 }
 
-.idiomas a {
+.btn-idiomas a {
 	color: #77797D;
 	font-weight: bold;
 }
@@ -165,6 +167,15 @@ a, button {
 		margin-top: 15px;
 	}
 
+	.contenido-info-entoria h2 {
+		font-size: 6rem;
+		letter-spacing: 2px;
+	}
+
+	.contenido-info-entoria h3 {
+		font-size: 3rem;
+		letter-spacing: 2px;
+	}
 
 	.contenido-info-entoria
 	.info-entoria

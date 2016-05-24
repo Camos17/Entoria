@@ -35,7 +35,7 @@
 
 	<body>
 		<div class="col-xs-12 entoria-wrapper no-padding">
-			<div id="carousel-example-generic" class="col-xs-12 no-padding carousel slide corousel-entoria hidden-xs hidden-sm" data-ride="carousel">
+			<div id="carousel-example-generic" class="col-xs-12 no-padding carousel slide corousel-entoria hidden-xs hidden-sm hidden" data-ride="carousel">
 
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
@@ -130,7 +130,7 @@
 
 			</div>
 
-			<div class="col-xs-5 col-xs-offset-7 col-sm-2 col-sm-offset-10 col-lg-1 col-lg-offset-11 idiomas">
+			<div class="col-xs-5 col-xs-offset-7 col-sm-2 col-sm-offset-10 col-lg-1 col-lg-offset-11 btn-idiomas">
 				<div class="col-xs-6 no-padding">
 					<a id="es" class="idioma btn btn-block no-padding" href="#" title="">ES</a>
 				</div>
@@ -153,58 +153,73 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.backstretch.min.js"></script>
 
 
 		<script type="text/javascript">
 
-			var aLangKeys=new Array();
-			aLangKeys['es']=new Array();
-			aLangKeys['en']=new Array();
+			  $.backstretch([
+			      "img/01.jpg" , "img/02.jpg" 
+			      , "img/03.jpg" , "img/04.jpg"
+			    , "img/05.jpg"
+			  ], {duration: 5000, fade: 850});
 
-			aLangKeys['es']['gerente general']='Gerente General';
-			aLangKeys['es']['(asociado entoria)']='(Asociado Entoria)';
-			aLangKeys['es']['proximamente']='PRÓXIMAMENTE';
-			aLangKeys['es']['pagina en construccion']='Página en construcción';
+				var aLangKeys=new Array();
+				aLangKeys['es']=new Array();
+				aLangKeys['en']=new Array();
 
-			aLangKeys['en']['gerente general']='General Manager';
-			aLangKeys['en']['(asociado entoria)']='(Partner of Entoria)';
-			aLangKeys['en']['proximamente']='COMING SOON';
-			aLangKeys['en']['pagina en construccion']='Website under construction';
+				aLangKeys['es']['gerente general']='Gerente General';
+				aLangKeys['es']['(asociado entoria)']='(Asociado Entoria)';
+				aLangKeys['es']['proximamente']='PRÓXIMAMENTE';
+				aLangKeys['es']['pagina en construccion']='Página en construcción';
 
-			$(document).ready(function(){
+				aLangKeys['en']['gerente general']='General Manager';
+				aLangKeys['en']['(asociado entoria)']='(Partner of Entoria)';
+				aLangKeys['en']['proximamente']='COMING SOON';
+				aLangKeys['en']['pagina en construccion']='Website under construction';
 
-				$(".idioma").click(function(){
-					var idioma = $(this).attr("id");
+				$(document).ready(function(){
 
-					$('.traducir').each(function(i){
-		          	$(this).text(aLangKeys[idioma][ $(this).attr('key') ]);
-		       		});
-		       		console.log(idioma);
-				});
+					$(".idioma").click(function(){
+						var idioma = $(this).attr("id");
 
-				$("#en").click(function(){
-					$(".proximamente-es").fadeOut(100, function(){
-						$(".proximamente-en").fadeIn(200);
+						$('.traducir').each(function(i){
+			          		$(this).text(aLangKeys[idioma][ $(this).attr('key') ]);
+			       		});
+			       		console.log(idioma);
 					});
-				});
 
-				$("#es").click(function(){
-					$(".proximamente-en").fadeOut(100, function(){
-						$(".proximamente-es").fadeIn(200);
+					$("#en").click(function(){
+						$(".proximamente-es").fadeOut(200, function(){
+							$(".proximamente-en").fadeIn(400);
+						});
 					});
-				});
 
-				
-				// $("#en").click(function(){
-				// 	$(".headline2").insertBefore($(".headline1"));
-				// 	$("h2").css({"margin-top":"0px"});
-				// });
+					$("#es").click(function(){
+						$(".proximamente-en").fadeOut(200, function(){
+							$(".proximamente-es").fadeIn(400);
+						});
+					});
 
-				// $("#es").click(function(){
-				// 	$(".headline1").insertBefore($(".headline2"));
-				// });
+					// $("#en").click(function(){
+					// 	$(".span2").insertBefore($(".span1"));
+					// });
 
-			});		
+					// $("#es").click(function(){
+					// 	$(".span1").insertBefore($(".span2"));
+					// });
+
+					
+					$("#en").click(function(){
+						$(".headline2").insertBefore($(".headline1"));
+						$("h2").css({"margin-top":"0px"});
+					});
+
+					$("#es").click(function(){
+						$(".headline1").insertBefore($(".headline2"));
+					});
+
+				});		
 
 
 		</script>
