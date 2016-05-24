@@ -88,6 +88,27 @@ a, button {
 }
 
 .contenido-info-entoria
+.proximamente-en {
+	display: none;
+}
+
+.contenido-info-entoria h2 {
+	font-family: 'Anton', sans-serif;
+	color: #FFF;
+	font-size: 4rem;
+	text-align: center;
+}
+
+.contenido-info-entoria h3 {
+	font-family: 'Anton', sans-serif;
+	color: #FFF;
+	text-align: center;
+	margin-top: 0px;
+	font-size: 2rem;
+}
+
+
+.contenido-info-entoria
 .info-entoria {
 	margin-bottom: 25px;
 }
@@ -140,6 +161,11 @@ a, button {
 
 @media screen and (min-width: 768px) {
 	
+	.contenido-entoria {
+		margin-top: 15px;
+	}
+
+
 	.contenido-info-entoria
 	.info-entoria
 	.info-contacto2 {
