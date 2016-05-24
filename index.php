@@ -35,7 +35,7 @@
 
 	<body>
 		<div class="col-xs-12 entoria-wrapper no-padding">
-			<div id="carousel-example-generic" class="col-xs-12 no-padding carousel slide corousel-entoria hidden-xs hidden-sm hidden" data-ride="carousel">
+			<div id="carousel-example-generic" class="col-xs-12 no-padding carousel slide corousel-entoria hidden-xs hidden-sm" data-ride="carousel">
 
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
@@ -158,11 +158,11 @@
 
 		<script type="text/javascript">
 
-			  $.backstretch([
-			      "img/01.jpg" , "img/02.jpg" 
-			      , "img/03.jpg" , "img/04.jpg"
-			    , "img/05.jpg"
-			  ], {duration: 5000, fade: 850});
+			  // $.backstretch([
+			  //     "img/01.jpg" , "img/02.jpg" 
+			  //     , "img/03.jpg" , "img/04.jpg"
+			  //   , "img/05.jpg"
+			  // ], {duration: 5000, fade: 850});
 
 				var aLangKeys=new Array();
 				aLangKeys['es']=new Array();
