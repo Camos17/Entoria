@@ -69,6 +69,7 @@ a, button {
 
 .contenido-entoria {
 	position: absolute;
+	margin-top: 25px;
 }
 
 .contenido-entoria-logo
@@ -125,6 +126,15 @@ a, button {
 
 .contenido-entoria hr {
 	border-top: 1px solid #FFF;
+}
+
+.idiomas {
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+.idiomas a {
+	color: #77797D;
+	font-weight: bold;
 }
 
 

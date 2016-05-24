@@ -56,9 +56,7 @@
 					<div class="item">
 				      <img class="img-carousel" src="img/05.jpg" alt="...">
 				    </div>
-				  </div>
-
-				  
+				  </div>				  
 			</div>
 
 			<div class="col-xs-12 no-padding fondo-entoria-mobile visible-xs visible-sm">
@@ -84,8 +82,8 @@
 					<div class="col-xs-12 info-entoria">	
 						<div class="col-xs-12 col-sm-6 no-padding info-contacto">
 							<p class="col-xs-12 no-padding text-center">VINCENZO FAGIUOLI <br><br>
-							Director <br>
-							Entoria Group <br><br> <br>
+							<span class="col-xs-12 span1">Director</span> <br>
+							<span class="col-xs-12 span2">Entoria Group</span> <br><br> <br>
 							<span>
 								<i class="fa fa-phone" aria-hidden="true"></i>
 							</span>
@@ -104,8 +102,9 @@
 
 						<div class="col-xs-12 col-sm-6 no-padding info-contacto2">
 							<p class="col-xs-12 no-padding text-center">RICARDO LAVERDE GAVIRIA <br><br>
-							Gerente General <br>
-							Agua y Energía Renovable de Colombia<br> (Asociado Entoria)	
+							<span class="col-xs-12 traducir" key="gerente general">Gerente General</span> <br>
+							Agua y Energía Renovable de Colombia<br> 
+							<span class="col-xs-12 traducir" key="(asociado entoria)">(Asociado Entoria)</span>	
 							<br><br>
 							<span>
 								<i class="fa fa-phone" aria-hidden="true"></i>
@@ -122,6 +121,17 @@
 				</div>
 
 			</div>
+
+			<div class="col-xs-5 col-xs-offset-7 idiomas">
+				<div class="col-xs-6 no-padding">
+					<a id="es" class="idioma btn btn-block no-padding" href="#" title="">ES</a>
+				</div>
+				<div class="col-xs-6 no-padding">
+					<a id="en" class="idioma btn btn-block no-padding" href="#" title="">EN</a>
+				</div>					
+			</div>
+
+
 		<!-- Controls -->
 		  <!-- <a class="left carousel-control hidden-xs hidden-sm" href="#carousel-example-generic" role="button" data-slide="prev">
 		    <span class="va icon ion-ios-arrow-back" aria-hidden="true"></span>
@@ -135,6 +145,40 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+
+
+		<script type="text/javascript">
+
+			var aLangKeys=new Array();
+			aLangKeys['es']=new Array();
+			aLangKeys['en']=new Array();
+
+			aLangKeys['es']['gerente general']='Gerente General';
+			aLangKeys['es']['(asociado entoria)']='(Asociado Entoria)';
+
+			aLangKeys['en']['gerente general']='General Manager';
+			aLangKeys['en']['(asociado entoria)']='(Partner of Entoria)';
+
+			$(document).ready(function(){
+
+				$(".idioma").click(function(){
+					var idioma = $(this).attr("id");
+
+					$('.traducir').each(function(i){
+		          	$(this).text(aLangKeys[idioma][ $(this).attr('key') ]);
+		       		});
+		       		console.log(idioma);
+				});
+
+
+				// $(".idioma").click(function(){
+				// 	$(".span2").insertBefore($(".span1"));
+				// });
+
+			});		
+
+
+		</script>
 
 	</body>
 
